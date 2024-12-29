@@ -1,0 +1,173 @@
+.album-selection-view {
+  background-color: black;
+  width: 100dvw;
+  height: 74dvh;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10dvh;
+  row-gap: 10dvh;
+  padding-top: 3dvh;
+  padding-bottom: 3dvh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.album-selection-view::-webkit-scrollbar {
+  display: none;
+}
+
+.album-selection-view img {
+  width: 20dvw;
+  height: 20dvw;
+  cursor: pointer;
+}
+
+.album-view {
+  background-color: black;
+  width: 100dvw;
+  height: 80dvhh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.album-view::-webkit-scrollbar {
+  display: none;
+}
+
+.album-view-image {
+  cursor: pointer;
+}
+
+.album-details-container {
+  background-color: black;
+  width: 30dvw;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.album-songs-container {
+  background-color: black;
+  width: 70dvw;
+  height: 80dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.album-songs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.album-view-exit {
+  position: absolute;
+  top: 1dvh;
+  left: 1dvh;
+  background-color: black;
+  width: 2dvw;
+  height: 2dvw;
+  display: flex;
+}
+
+.album-view-exit:hover {
+  background-color: #333;
+}
+
+.album-details-container img{
+  width: 18dvw;
+}
+
+.album-view-title {
+  color: white;
+  margin-top: 3dvh;
+  margin-bottom: 3dvh;
+  font-size: 150%;
+}
+
+.album-view-artist {
+  color: white;
+  font-size: 120%;
+  margin-bottom: 3dvh;
+}
+
+.album-view-play-controls {
+  background-color: black;
+  width: 20dvw;
+  height: 6dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.album-view-play-button,
+.album-view-shuffle-button {
+  width: 8dvw;
+  height: 4dvh;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.album-view-play-button:hover,
+.album-view-shuffle-button:hover {
+  background-color: #999;
+}
+
+.album-view-play-button:active,
+.album-view-shuffle-button:active {
+  background-color: white;
+}
+
+.album-song-item {
+  background-color: black;
+  width: 70dvw;
+  height: 8dvh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
+}
+
+.album-song-item-number {
+  color: white;
+  width: 5%;
+  text-align: center;  
+}
+
+.album-song-item-cover-container {
+  width: 5%;
+}
+
+.album-song-item-cover {
+  width: 90%;
+  cursor: pointer;
+}
+
+.album-song-item-title {
+  color: white;
+  width: 84%;
+  padding-left: 1%;
+}
+
+.album-song-item-add {
+  color: white;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 140%;
+  line-height: 8dvh;
+  margin-right: 1%;
+}
+
+.album-song-item-add:hover {
+  background-color: #333;
+}

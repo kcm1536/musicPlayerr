@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Nothing Compares",
+    "fileName": "nothingCompares",
+    "id": 1,
+    "albumLength" : 20,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Pyrotechnics",
+    "fileName" : "pyrotechnics",
+    "id": 2,
+    "albumLength" : 11,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Purple Princess",
+    "fileName" : "purplePrincess",
+    "id": 3,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Vendetta",
+    "fileName" : "vendetta",
+    "id": 4,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Coronation",
+    "fileName" : "coronation",
+    "id": 5,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "DEAD POET",
+    "fileName" : "deadPoet",
+    "id": 6,
+    "albumLength" : 13,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Birthday Tears",
+    "fileName" : "birthdayTears",
+    "id": 7,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "House of Haze",
+    "fileName" : "houseOfHaze",
+    "id": 8,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "Apricity",
+    "fileName" : "apricity",
+    "id": 9,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  },
+  {
+    "name": "LUXE",
+    "fileName" : "luxe",
+    "id": 10,
+    "albumLength" : 12,
+    "artist" : "Kyle McNamara"
+  }
+]

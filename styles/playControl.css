@@ -1,0 +1,146 @@
+.play-control-menu {
+  background-color: black;
+  width: 100dvw;
+  height: 12dvh;
+  display: flex;
+}
+
+/* progress bar */
+.progress-bar-container {
+  position: absolute;
+  display: flex;
+  bottom: 12dvh;
+  left: 0dvh;
+  height: 1dvh;
+  width: 100dvw;
+  background-color: rgb(15, 15, 15);
+  cursor: default;
+}
+
+.current-song-time-display {
+  position: absolute;
+  left: 0.3dvw;
+  top: 0;
+  line-height: 4dvh;
+  color: white;
+  cursor: pointer;
+}
+
+.current-song-length-display {
+  position: absolute;
+  right: 0.3dvw; 
+  top: 0;
+  line-height: 4dvh;
+  color: white;
+  cursor: pointer;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+  cursor: default;
+}
+
+/* left hand section with image and song title/artist */
+.current-song-info-container {
+  background-color: black;
+  height: 12dvh;
+  width: 25dvw;
+  display: flex;
+
+}
+
+.current-song-photo-container {
+  background-color: black;
+  height: 12dvh;
+  width: 8dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-song-photo-container img {
+  height: 10dvh;
+}
+
+.current-song-text-container {
+  background-color: black;
+  height: 12dvh;
+  width: 17dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 1dvh;
+  padding-left: 3px;;
+}
+
+.current-song-text-container div {
+  width: 17dvw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* middle section with play button */
+.play-button-container {
+  background-color: black;
+  width: 50dvw;
+  height: 12dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  height: 5dvh;
+  cursor: pointer;
+}
+
+.skip-button {
+  height: 6dvh;
+  margin-left: 2dvw;
+  margin-right: 2dvw;
+  cursor: pointer;
+}
+
+/* right section with loop and shuffle buttons */
+.playback-controls-container {
+  background-color: black;
+  width: 25dvw;
+  height: 12dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.repeat-button-container {
+  position: relative;
+}
+
+.looping-song,
+.looping-all {
+  position: absolute;
+  top: 2.3dvh;
+  right: 0dvh;
+  background-color: purple;
+  color: white;
+  width: 2.5dvh;
+  height: 2.5dvh;
+  line-height: 2.5dvh;
+  font-size: 80%;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.looping-song,
+.looping-all {
+  display: none;
+}
+
+.playback-controls-container img {
+  height: 5dvh;
+  cursor: pointer;
+}

@@ -1,0 +1,160 @@
+.queue-view {
+  background-color: black;
+  width: 100dvw;
+  height: 80dvh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* library section on the left */
+.library-container {
+  background-color: black;
+  height: 80dvh;
+  width: 50dvw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* container for the header of the library section to swap between songs and albums */
+.library-header-container {
+  background-color: black;
+  height: 8dvh;
+  width: 50dvw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* buttons in the header */
+.all-songs-header,
+.all-albums-header {
+  background-color: black;
+  width: 2dvw;
+  height: 2dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.library-header-container img {
+  width: 2dvw;
+  height: 2dvw;
+}
+
+/* container for the actual library section which has the songs */
+.library {
+  width: 50dvw;
+  height: 72dvh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.library::-webkit-scrollbar {
+  display: none;
+}
+
+/* queue section on the right */
+.queue-container {
+  background-color: black;
+  height: 100dvh;
+  width: 50dvw;
+}
+
+.queue-header-container {
+  background-color: black;
+  height: 8dvh;
+  width: 50dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queue-header-container img {
+  width: 3dvw;
+}
+
+.queue {
+  width: 50dvw;
+  height: 72dvh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.queue::-webkit-scrollbar {
+  display: none;
+}
+
+/* song item for the library and queue */
+.song-item,
+.album-item {
+  background-color: black;
+  width: 50dvw;
+  height: 8dvh;
+  display: flex;
+  align-items: center;
+}
+
+.song-item-artwork,
+.album-item-artwork{
+  background-color: black;
+  height: 8dvh;
+  width: 12dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.song-item-artwork img,
+.album-item-artwork img {
+  width: 7dvh;
+}
+
+.queue img{
+  cursor: default;
+}
+
+.song-item-title,
+.queue-item-title,
+.album-item-title {
+  background-color: black;
+  height: 8dvh;
+  width: 77dvh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-item-add,
+.song-item-remove,
+.album-item-add {
+  background-color: black;
+  height: 8dvh;
+  width: 12dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.song-item-add:hover,
+.song-item-remove:hover,
+.album-item-add:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.clear-queue-button {
+  cursor: pointer;
+}

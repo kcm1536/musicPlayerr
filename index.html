@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/pageSelection.css" >
+  <link rel="stylesheet" href="styles/albumSelection.css" >
+  <link rel="stylesheet" href="styles/lyricsView.css">
+  <link rel="stylesheet" href="styles/queueMenu.css">
+  <link rel="stylesheet" href="styles/playControl.css" >
+  <link rel="stylesheet" href="styles/general.css" >
+  <title>Music Player</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="page-selection-menu">
+      <div class="home-page-button-container">
+        <img src="icons/home.png" class="home-page-button">
+      </div>
+      <div class="lyric-page-button-container">
+        <img src="icons/lyrics.png" class="lyric-page-button">
+      </div>
+      <div class="queue-page-button-container">
+        <img src="icons/queue.png" class="queue-page-button">
+      </div>
+    </div>
+
+    <div class="album-selection-view page-view">
+    </div>
+
+    <div class="album-view page-view">
+      <div class="album-details-container">
+        <div class="album-view-exit">
+          <img src="icons/exit.png">
+        </div>
+        <img class="album-view-image" src="albumCovers/luxe.png">
+        <div class="album-view-title">LUXE</div>
+        <div class="album-view-artist">Kyle McNamara</div>
+        <div class="album-view-play-controls">
+        </div>
+      </div>
+      <div class="album-songs-container">
+      </div>
+    </div>
+
+    <div class="queue-view page-view">
+      <div class="library-container">
+        <div class="library-header-container">
+          <div class="all-songs-header">
+            <img src="icons/Song.png">
+          </div>
+          <div class="all-albums-header">
+            <img src="icons/Album.png">
+          </div>
+        </div>
+        <div class="library">
+        </div>
+      </div>
+      <div class="queue-container">
+        <div class="queue-header-container">
+          <img src="icons/queue.png" class="clear-queue-button">
+        </div>
+        <div class="queue">
+        </div>
+      </div>
+    </div>
+
+    <div class="lyrics-view page-view">
+      <div class="previous-two-lyric">...</div>
+      <div class="previous-one-lyric">...</div>
+      <div class="current-lyric">...</div>
+      <div class="next-one-lyric">...</div>
+      <div class="next-two-lyric">...</div>
+    </div>
+
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <div class="play-control-menu">
+
+      <!-- left hand section with image and song title/artist -->
+      <div class="current-song-info-container">
+        <div class="current-song-photo-container">
+          <img src="albumCovers/noSong.png" class="current-song-photo">
+        </div>
+        <div class="current-song-text-container">
+          <div class="current-song-title">No song playing</div>
+          <div class="current-song-artist">No song playing</div>
+        </div>
+      </div>
+
+      <!-- middle section with play and skip buttons -->
+      <div class="play-button-container">
+        <img src="icons/skipBack.png" class="skip-button js-skip-back">
+        <img src="icons/Play.png" class="play-button js-play">
+        <img src="icons/skipForward.png" class="skip-button js-skip-forward">
+      </div>
+
+      <!-- right section with loop and shuffle buttons -->
+      <div class="playback-controls-container">
+        <div class="repeat-button-container">
+          <img src="icons/Repeat.png">
+          <div class="looping-song">1</div>
+          <div class="looping-all">A</div>
+        </div>
+        <img src="icons/Shuffle.png" class="shuffle-button">
+      </div>
+    </div>
+
+  </div>
+  <script src="scripts/general.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/albumSelection.js"></script>
+  <script src="scripts/progressBar.js"></script>
+  <script src="scripts/lyrics.js"></script>
+  <script src="scripts/queue.js"></script>
+</body>
+</html>
+
+<!--
+- drag and drop queue
+    - click on song > what song, position in the queue, what song is playing
+    - move the song > remove from that position, put in new position, update currentSongNumber, render queue
+-->
